@@ -372,7 +372,7 @@ for ($i = 0; $i < count($all_users); $i++) {
 $row += 2;
 
 $generated_time = new DateTime();
-write_string($im, 2, 5, $lineHeight * $row, "Generated " . $generated_time->format("d.m.Y H:i:s")." ".count($booking_matrix), $color_gray);
+write_string($im, 2, 5, $lineHeight * $row, "Generated " . $generated_time->format("d.m.Y H:i:s"), $color_gray);
 
 $newHeight = ($row+1)*$lineHeight;
 $dstim = imagecreatetruecolor($imageWidth, $newHeight);
